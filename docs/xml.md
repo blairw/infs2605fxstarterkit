@@ -10,7 +10,7 @@ XMLstands for "eXtensible Markable Language" (I know, it's cheesy, it is what it
 
 ```xml
 <tag attribute1="hello world" attribute2="bonjour monde">
-    contents
+	contents
 </tag>
 ```
 
@@ -23,13 +23,13 @@ XML files form the basis of FXML layouts. Even though these open in Scene Builde
 
 ```xml
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.business.infs2605.fxstarterkit.PrimaryController">
-   <children>
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
+	<children>
+		<Label text="Primary View" />
+		<Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+	</children>
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
 </VBox>
 ```
 
@@ -39,15 +39,22 @@ Technically, you can rewrite it to be a bit more readable, and it is still valid
 
 ```xml
 <VBox alignment="CENTER" spacing="20.0"
-	  xmlns="http://javafx.com/javafx/8.0.171"
-	  xmlns:fx="http://javafx.com/fxml/1"
-	  fx:controller="au.edu.unsw.business.infs2605.fxstarterkit.PrimaryController"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="au.edu.unsw.business.infs2605.fxstarterkit.PrimaryController"
 >
-   <children>
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
-   </children>
-   <padding>
+	<children>
+		<Label text="Primary View" />
+		<Button
+			fx:id="primaryButton"
+			text="Switch to Secondary View"
+			onAction="#switchToSecondary"
+		/>
+	</children>
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+</VBox>
 ```
 
 Now you can easily see on line 4:
