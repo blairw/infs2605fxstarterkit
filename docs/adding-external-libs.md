@@ -9,7 +9,7 @@ However, sometimes you want to do more than just basic things. For example, as y
 In Java, libraries are usually packaged as JAR files. Once upon a time, the best way to add a library packaged as a JAR file into your project would be to manually download the JAR file and manually configure your project to use that JAR file. That is the case with commandline-based development environments, which is how Ed works. When you click the green "play" button on Ed, it executes build and run commands:
 
 ``bash
-javac -cp ".:./sqlite-jdbc-3.30.1.jar" PetDatabase.java 
+javac -cp ".:./sqlite-jdbc-3.30.1.jar" PetDatabase.java  
 java -cp ".:./sqlite-jdbc-3.30.1.jar" PetDatabase
 ``
 
