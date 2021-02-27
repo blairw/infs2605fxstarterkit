@@ -8,10 +8,10 @@ However, sometimes you want to do more than just basic things. For example, as y
 
 In Java, libraries are usually packaged as JAR files. Once upon a time, the best way to add a library packaged as a JAR file into your project would be to manually download the JAR file and manually configure your project to use that JAR file. That is the case with commandline-based development environments, which is how Ed works. When you click the green "play" button on Ed, it executes build and run commands:
 
-``bash
+```bash
 javac -cp ".:./sqlite-jdbc-3.30.1.jar" PetDatabase.java  
 java -cp ".:./sqlite-jdbc-3.30.1.jar" PetDatabase
-``
+```
 
 This command works by looking for the `sqlite-jdbc-3.30.1.jar` file that you have to manually download and then set up. If you speak to some students who have completed INFS2605 in the past, they will tell you how awful it is for the JAR files to go missing, or configured incorrectly due to absolute paths instead of relative paths, etc. I've seen groups lose marks because of silly things like that.
 
